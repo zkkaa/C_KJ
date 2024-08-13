@@ -1,0 +1,66 @@
+.Div_PopUp-Update-Stok {
+    position: relative;
+    width: 20vw;
+    height: 22vh;
+    margin-top: 40vh;
+    margin-left: 45vw;
+    border-radius: 15px;
+    padding: 20px 20px;
+    border: 1px solid black;
+}
+
+.Div_PopUp-Update-Stok .PopUp-Update-Stok {
+    width: 100%;
+    height: 100%;
+}
+
+.PopUp-Update-Stok .popup-judul {
+    height: 5.5vh;
+    width: 100%;
+    align-content: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.PopUp-Update-Stok .popup-des {
+    height: 6vh;
+    width: 100%;
+    font-size: 14px;
+}
+
+.PopUp-Update-Stok .btn_tidak-ya {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4vh;
+}
+
+.btn_tidak-ya .btn-tidak,
+.btn_tidak-ya .btn-ya {
+    width: 35%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.btn_tidak-ya .btn-tidak {
+    background-color: red;
+}
+
+.btn_tidak-ya .btn-tidak:active {
+    border: 1px solid red;
+    color: red;
+    background-color: #ffffff;
+}
+
+.btn_tidak-ya .btn-ya {
+    background-color: #61E16E;
+}
+
+.btn_tidak-ya .btn-ya:active {
+    border: 1px solid #61E16E;
+    color: #61E16E;
+    background-color: #ffffff;
+}

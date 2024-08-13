@@ -1,0 +1,211 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .tampilan_print_pem {
+        width: 105mm;
+        min-height: 148mm;
+        padding: 15mm;
+        margin: 5mm auto;
+        background: white;
+    }
+    .page_print_pem {
+        height: 135mm;
+        margin: -8mm;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    @media print {
+        .tampilan_print_pem {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+            width: 104mm;
+            height: 148mm;  
+        }
+    }
+
+    /* judul */
+    .page_print_pem .judul1_print_pem {
+        display: flex;
+        height: 16%;
+        width: 100%;
+        border-bottom: 0.5px solid black;
+    }
+
+    .logo_print_pem {
+        position: relative;
+        height: 100%;
+        width: 24%;
+    }
+
+    .judul1_print_pem .logo_print_pem img {
+        width: 100%;
+        padding-top: 7%;
+    }
+
+    .judul1_print_pem .judul_print_pem {
+        position: relative;
+        height: 100%;
+        width: 95%;
+        text-align: center;
+    }
+
+    .judul_print_pem .judul_print_smk,
+    .judul_print_pem .judul_print_bidang {
+        width: 100%;
+        font-size: 9px;
+        height: 9.5px;
+        align-content: center;
+    }
+    
+    
+    .judul_print_pem .judul_print_upj {
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 2px;
+        height: 21px;
+    }
+
+    .judul_print_pem .judul_print_alamat {
+        width: 100%;
+        font-size: 7px;
+        font-style: italic;
+    }
+
+    .judul_print_alamat .jalan {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 2 */
+    .page_print_pem .judul2_print  {
+        display: flex;
+        height: 11%;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        margin-top: 1vh;
+    }
+
+    .page_print_pem .judul2_print_left {
+        width: 50%;
+        height: 100%;
+        text-align: left;
+        font-size: 8px;
+    }
+
+    .page_print_pem .judul2_print_left div {
+        width: 100%;
+        height: 23%;
+    }
+
+    .page_print_pem .judul2_print_right {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        justify-content: end;
+        font-size: 8px;
+    }
+
+    .judul2_print_right .tgl_tasik {
+        margin-right: 4px;
+    }
+
+    /* detai pemasukan ckj */
+    .page_print_pem .detail_pemasukan_ckj {
+        width: 100%;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    /* tabel */
+    .detail_pemasukan_ckj .tabel_print_pemasukan {
+        width: 100%;
+    }
+
+    .tabel_print_pemasukan .tbl_print_pem {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    .tbl_print_pem,
+    .tbl_print_pem th,
+    .tbl_print_pem td {
+        font-size: 8px;
+        border: 1px solid black;
+    }
+
+    .judul_tbl_print_pem,
+    .detail_tbl_print_pem {
+        height: 17px;
+    }
+
+    .total_tbl_print_pem {
+        height: 17px;
+    }
+
+    /* ttd */
+    .detail_pemasukan_ckj .ttd_print_pamsukan {
+        display: flex;
+        height: 18%;
+        width: 100%;
+        margin-top: 10%;
+        justify-content: space-between;
+    }
+
+    .ttd_print_pamsukan .ttd_pemasukan_left {
+        height: 100%;
+        width: 30%;
+        text-align: center;
+    }
+
+    .ttd_pemasukan_left .span_pemasukan {
+        width: 100%;
+        height: 50%;
+        font-size: 8px;
+    }
+
+    .ttd_pemasukan_left .garis_bawah {
+        width: 100%;
+        height: 50%;
+        border-bottom: 0.5px solid black;
+    }
+
+    .ttd_print_pamsukan .ttd_pemasukan_right {
+        height: 120%;
+        width: 30%;
+        margin-top: -4%;
+        text-align: center;
+    }
+
+    .ttd_pemasukan_right .span_pemasukan_upj {
+        width: 100%;
+        height: 50%;
+        font-size: 8px;
+    }
+
+    .ttd_pemasukan_right .garis_bawah {
+        width: 100%;
+        height: 50%;
+        border-bottom: 0.5px solid black;
+    }
+    

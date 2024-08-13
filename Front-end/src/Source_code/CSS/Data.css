@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.cont_data_pertama {
+  position: relative;
+  margin: 7vh 30px 0 120px;
+  width: calc(100% - 120px);
+  height: 75vh;
+  padding: 2% 2% 2% 2%;
+  position: fixed;
+}
+
+/* menu */
+.cont_data_pertama .menu_pertama {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 7vh;
+}
+
+.menu_pertama li {
+  list-style: none;
+}
+
+.menu_pertama a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 20px;
+  color: grey;
+}
+
+.menu_pertama .menu_barang {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.menu_pertama .menu_layanan {
+  width: 50%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.menu_pertama .menu_pelanggan {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.menu_pertama .menu_pelanggan:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.menu_pertama .menu_pelanggan span {
+  width: 100%;
+  text-align: center;  
+}
+
+.menu_pertama .menu_pelanggan span:hover {
+  color: black;
+}
+
+.menu_pertama .menu_barang:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.menu_pertama .menu_barang span {
+  width: 100%;
+  text-align: center;  
+}
+
+.menu_pertama .menu_barang span:hover {
+  color: black;
+}
+
+.menu_pertama .menu_layanan:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+}
+
+.menu_pertama .menu_layanan span {
+  width: 100%;
+  text-align: center;  
+}
+
+.menu_pertama .menu_layanan span:hover {
+  color: black;
+}
+
+/* inp_cari */
+.cont_data_pertama .inp_cari {
+  display: flex;
+  line-height: 50px;
+  height: 8%;
+  margin-top: 20px;
+}
+
+.cont_data_pertama .inp_cari .inp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.cont_data_pertama .inp_cari .inp button {
+  color: black;
+  cursor: pointer;
+}
+
+.cont_data_pertama .inp_cari .inp button:active {
+  background-color: #f3f3f3;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-inline-start: 5px;
+  margin: 0 0 0 0;
+}
+
+.inp button {
+  width: 50px;
+  height: 35px;
+  border: 1px solid black;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff;
+}
+
+.inp button i {
+  font-size: 20px;
+}
+
+/* tbl_data_barang */
+.cont_data_pertama .tbl_data_barang {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-top: 1.5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .cont_data_pertama  {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+  .menu_pertama a {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .cont_data_pertama  {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+  .menu_pertama a {
+    font-size: 17.5px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_data_pertama  {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+  .menu_pertama a {
+    font-size: 16.5px;
+  }
+}

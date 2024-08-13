@@ -1,0 +1,336 @@
+.cont_rekap_pengeluaran {
+  margin: 7vh 30px 0 120px;
+  width: calc(100% - 120px);
+  height: 83.6vh;
+  padding: 2% 2% 2% 2%;
+  position: fixed;
+}
+
+/* menu */
+.cont_rekap_pengeluaran .menu_rekap_pengeluaran {
+  display: flex;
+  justify-content: center;
+}
+
+.menu_rekap_pengeluaran li {
+  list-style: none;
+}
+
+.menu_rekap_pengeluaran a {
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  justify-content: center;
+  padding-top: 2vh;
+  color: grey;
+}
+
+.menu_rekap_pengeluaran .rekap_pemasukan_div {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.rekap_pemasukan_div .pemasukan_t:hover {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.menu_rekap_pengeluaran .rekap_pengeluaran_div {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.rekap_pengeluaran_div #active11 {
+  width: 100%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+}
+
+/* filter & btn */
+.cont_rekap_pengeluaran .dropdown_cari_r-pengeluaran {
+  display: flex;
+  width: 100%;
+  height: 11vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown_cari_r-pengeluaran .dropdown_r-pengeluaran {
+  display: flex;
+  width: 37vw;
+  height: 5vh;
+  justify-content: space-between;
+}
+
+.dropdown_r-pengeluaran .div_droptahun_r-pengeluaran {
+  width: 17vw;
+  height: 5vh;
+}
+
+.dropdown_r-pengeluaran .div_droptahun_r-pengeluaran select {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 5px;
+  border: 1px solid black;
+}
+
+.dropdown_r-pengeluaran .div_dropbulan_r-pengeluaran {
+  width: 17vw;
+  height: 5vh;
+}
+
+.dropdown_r-pengeluaran .div_dropbulan_r-pengeluaran select {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 5px;
+  border: 1px solid black;
+}
+
+/* btn print & hapus */
+.cont_rekap_pengeluaran .hapus_print_r-pengeluaran {
+  display: flex;
+  width: 275px;
+  height: 5vh;
+  justify-content: space-between;
+}
+
+.cont_rekap_pengeluaran .hapus_print_r-pengeluaran a {
+  height: 100%;
+  text-decoration: none;
+  width: 8vw;
+}
+
+.hapus_print_r-pengeluaran .btn_print_r-pengeluaran {
+  display: flex;
+  width: 122px;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: #6FB9E7;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hapus_print_r-pengeluaran .btn_print_r-pengeluaran:active {
+  border: 1px solid #5e95fe;
+  background-color: #ffffff;
+  color: #5e95fe;
+}
+
+.hapus_print_r-pengeluaran .btn_hapus_r-pengeluaran {
+  display: flex;
+  width: 122px;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: red;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4%;
+  cursor: pointer;
+}
+
+.hapus_print_r-pengeluaran .icon_peng_print {
+  padding-top: 10px;
+}
+
+.hapus_print_r-pengeluaran .btn_hapus_r-pengeluaran:active {
+  border: 1px solid red;
+  color: red;
+  background-color: #ffffff;
+}
+
+.hapus_print_r-pengeluaran .btn_print_r-pengeluaran span {
+  margin-top: 6%;
+  margin-left: 3%;
+}
+.hapus_print_r-pengeluaran .btn_hapus_r-pengeluaran span {
+  margin-top: 9%;
+  margin-left: 2%;
+}
+
+/* tbl_data_r_pengeluaran */
+.cont_rekap_pengeluaran .tbl_data_r_pengeluaran {
+  width: 100%;
+  height: 88%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+.list_r-pengeluaran {
+  max-width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.tbl_data_r_pengeluaran table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tbl_data_r_pengeluaran table td {
+  height: 6vh;
+  border-bottom: 1px solid black;
+}
+
+.tbl_data_r_pengeluaran table .tj_r-pengeluaran {
+  position: relative;
+  height: 6vh;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.tj_r-pengeluaran .detail_rekap_pengeluaran {
+  width: 130px;
+}
+
+.rekap_pengeluaran_tabel .btn-detail-pengeluaran {
+  width: 35px;
+  height: 4.5vh;
+  margin-right: 10px;
+  border: none;
+  border-radius: 9px;
+  background-color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+  color: #5e95fe;
+}
+
+.rekap_pengeluaran_tabel .btn_hapus_tblpengeluaran {
+  margin-left: 10px;
+  width: 35px;
+  height: 4.5vh;
+  border: none;
+  border-radius: 9px;
+  background-color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+  color: #FF001F;
+}
+
+.icon_detaihapus_repeng {
+  width: 30px;
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .cont_rekap_pengeluaran  {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+  .menu_rekap_pengeluaran a {
+    font-size: 19px;
+  }
+  .cont_rekap_pengeluaran .hapus_print_r-pengeluaran {
+    width: 255px;
+  }
+  .hapus_print_r-pengeluaran .btn_print_r-pengeluaran,
+  .hapus_print_r-pengeluaran .btn_hapus_r-pengeluaran {
+    width: 115px;
+  }
+  .hapus_print_r-pengeluaran .btn_print_r-pengeluaran span {
+    margin-top: 7.5%;
+  }
+  .tj_r-pengeluaran .detail_rekap_pengeluaran {
+    width: 115px;
+  }
+  .rekap_pengeluaran_tabel .btn-detail-pengeluaran{
+    margin-right: 10px;
+    width: 35px;
+  }
+  .rekap_pengeluaran_tabel .btn_hapus_tblpengeluaran {
+    margin-left: 10px;
+    width: 35px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .cont_rekap_pengeluaran  {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+  .menu_rekap_pengeluaran a {
+    font-size: 17.5px;
+  }
+  .cont_rekap_pengeluaran .hapus_print_r-pengeluaran {
+    width: 230px;
+  }
+  .hapus_print_r-pengeluaran .btn_print_r-pengeluaran,
+  .hapus_print_r-pengeluaran .btn_hapus_r-pengeluaran {
+    width: 105px;
+  }
+  .hapus_print_r-pengeluaran .btn_print_r-pengeluaran span {
+    margin-top: 9%;
+  }
+  .tj_r-pengeluaran .detail_rekap_pengeluaran {
+    width: 105px;
+  }
+  .rekap_pengeluaran_tabel .btn-detail-pengeluaran{
+    margin-right: 7px;
+    width: 35px;
+  }
+  .rekap_pengeluaran_tabel .btn_hapus_tblpengeluaran {
+    margin-left: 7px;
+    width: 35px;
+  }
+  .icon_detaihapus_repeng {
+    width: 25px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_rekap_pengeluaran  {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+  .menu_rekap_pengeluaran a {
+    font-size: 16.5px;
+  }
+  .cont_rekap_pengeluaran .hapus_print_r-pengeluaran {
+    width: 205px;
+  }
+  .hapus_print_r-pengeluaran .btn_print_r-pengeluaran,
+  .hapus_print_r-pengeluaran .btn_hapus_r-pengeluaran {
+    width: 95px;
+  }
+  .hapus_print_r-pengeluaran .btn_print_r-pengeluaran span {
+    margin-top: 9%;
+  }
+  .tj_r-pengeluaran .detail_rekap_pengeluaran {
+    width: 95px;
+  }
+  .rekap_pengeluaran_tabel .btn-detail-pengeluaran{
+    margin-right: 5px;
+    width: 30px;
+  }
+  .rekap_pengeluaran_tabel .btn_hapus_tblpengeluaran {
+    margin-left: 5px;
+    width: 30px;
+  }
+  .icon_detaihapus_repeng {
+    width: 22px;
+  }
+}

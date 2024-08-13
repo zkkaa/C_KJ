@@ -1,0 +1,88 @@
+.Div_PopUp_Hapus-Produk {
+    position: absolute;
+    width: 318px;
+    height: 166px;
+    margin-top: 37vh;
+    margin-left: 40vw;
+    border-radius: 15px;
+    padding: 20px 20px;
+    z-index: 999999;
+    background-color: #ffffff;
+}
+
+.Div_PopUp_Hapus-Produk .PopUp_Hapus-Produk {
+    width: 100%;
+    height: 100%;
+}
+
+.PopUp_Hapus-Produk .popup-judul {
+    height: 5.5vh;
+    width: 100%;
+    align-content: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.PopUp_Hapus-Produk .popup-des {
+    height: 6vh;
+    width: 100%;
+    font-size: 14px;
+}
+
+.PopUp_Hapus-Produk .btn_tidak-ya {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4vh;
+}
+
+.btn_tidak-ya .btn-tidak,
+.btn_tidak-ya .btn-ya-hpro {
+    width: 35%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.btn_tidak-ya .btn-tidak {
+    background-color: red;
+}
+
+.btn_tidak-ya .btn-tidak:active {
+    border: 1px solid red;
+    color: red;
+    background-color: #ffffff;
+}
+
+.btn_tidak-ya .btn-ya-hpro {
+    background-color: #61E16E;
+}
+
+.btn_tidak-ya .btn-ya-hpro:active {
+    border: 1px solid #61E16E;
+    color: #61E16E;
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+    .Div_PopUp_Hapus-Produk {
+        margin-top: 37vh;
+        margin-left: 38.5vw;
+    }
+  }
+  
+  @media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+    .Div_PopUp_Hapus-Produk {
+        margin-top: 37vh;
+        margin-left: 36vw;
+    }
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .Div_PopUp_Hapus-Produk {
+        margin-top: 37vh;
+        margin-left: 30vw;
+    }
+  }

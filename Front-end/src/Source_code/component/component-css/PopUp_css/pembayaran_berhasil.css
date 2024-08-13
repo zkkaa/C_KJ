@@ -1,0 +1,115 @@
+.Div_PopUp_Pembayaran-Berhasil {
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    margin-top: 34vh;
+    margin-left: 37.3vw;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 5px grey;
+    z-index: 999999;
+    background-color: #ffffff;
+}
+
+.Div_PopUp_Pembayaran-Berhasil .PopUp_Pembayaran-Berhasil {
+    width: 100%;
+    height: 100%;
+}
+
+.PopUp_Pembayaran-Berhasil .popup-gambar {
+    height: 6vh;
+    width: 100%;
+    text-align: center;
+    color: #61E16E;
+}
+
+.popup-gambar svg {
+    width: 48px;
+    height: auto;
+}
+
+.PopUp_Pembayaran-Berhasil .popup-judul {
+    height: 6vh;
+    width: 100%;
+    text-align: center;
+    align-content: end;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+
+.PopUp_Pembayaran-Berhasil .popup-des {
+    height: 5vh;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.PopUp_Pembayaran-Berhasil .btn_pembayaran_berhasil {
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    margin-top: 1vh;
+    justify-content: space-around;
+}
+
+.btn_pembayaran_berhasil .ya_rekap {
+    width: 90px;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: #61E16E;
+    cursor: pointer;
+}
+
+.btn_pembayaran_berhasil .ya_rekap:active {
+    color: #61E16E;
+    border: 1px solid #61E16E;
+    background-color: #ffffff;
+}
+
+.btn_pembayaran_berhasil .tidak_rekap {
+    width: 90px;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+}
+
+.btn_pembayaran_berhasil .tidak_rekap:active {
+    color: red;
+    border: 1px solid red;
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+    .Div_Hapus-Data-Pelanggan {
+        margin: 35vh 0 0 38.5vw;
+    }
+    .Div_PopUp_Pembayaran-Berhasil {
+        margin-top: 34vh;
+        margin-left: 37.3vw;
+    }
+    .Div_PopUp_Pembayaran-Berhasil {
+        margin-left: 35.5vw;
+    }
+  }
+  
+  @media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+    .Div_Hapus-Data-Pelanggan {
+        margin: 35vh 0 0 36.5vw;
+    }
+    .Div_PopUp_Pembayaran-Berhasil {
+        margin-left: 33vw;
+    }
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .Div_Hapus-Data-Pelanggan {
+        margin: 35vh 0 0 30vw;
+    }
+    .Div_PopUp_Pembayaran-Berhasil {
+        margin-left: 25vw;
+    }
+  }

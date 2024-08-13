@@ -1,0 +1,140 @@
+.tbl_orderan_berhasil {
+    position: absolute;
+    margin: 6.5% 0 0 30.5%;
+    width: calc(85% - 650px);
+    height: 74vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid black;
+    align-content: center;
+    z-index: 99999;
+}
+
+.tbl_orderan_berhasil .orderan_berhasil {
+    width: 96%;
+    height: 96%;
+    margin-left: 2%;
+}
+
+.orderan_berhasil .orderan {
+    width: 100%;
+    height: 5vh;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.orderan_berhasil .div-isi {
+    width: 100%;
+    height: 9.5vh;
+    align-content: center;
+    border-bottom: 1px solid black;
+}
+
+.div-isi .ket-judul {
+    width: 100%;
+    height: 40%;
+    color: grey;
+    font-weight: 500;
+    font-size: 15.5px;
+}
+
+.div-isi .ket-keterangan {
+    width: 100%;
+    height: 40%;
+    font-size: 17px;
+}
+
+.orderan_berhasil .div-pesan {
+    width: 100%;
+    height: 15vh;
+}
+
+.div-pesan .div-pesan-judul {
+    height: 4vh;
+    width: 100%;
+    margin-top: 1vh;
+    color: grey;
+    font-weight: 500;
+    align-content: center;
+}
+
+.div-pesan .div-pesan-barang {
+    height: 4.5vh;
+    width: 100%;
+    align-content: end;
+}
+
+.div-pesan .div-pesan-jumlah {
+    display: flex;
+    height: 4vh;
+    width: 100%;
+    align-content: center;
+}
+
+.div-pesan-jumlah .produk {
+    display: flex;
+    height: 4vh;
+    width: 50%;
+    align-items: center;
+}
+
+.produk .div-harga-barang,
+.produk .div-total-barang {
+    width: 50%;
+}
+
+.div-pesan-jumlah .harus-dibayar {
+    width: 50%;
+    text-align: end;
+}
+
+/* btn */
+.orderan_berhasil .btn_printokedetail {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    justify-content: center;
+}
+
+.btn_printokedetail .btn_oke_detail {
+    width: 90%;
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+.btn_printokedetail .oke {
+    width: 100%;
+    height: 100%;
+    color: black;
+    border-radius: 30px;
+    border: none; 
+    background: #5BC85B;
+    cursor: pointer;
+}
+
+.btn_printokedetail .oke:active {
+    background: #ffffff;
+    color: #5BC85B;
+    border: 1px solid #5BC85B;
+}
+
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+    .tbl_orderan_berhasil {
+        margin: 7% 0 0 25%;
+        width: calc(85% - 500px);
+    }
+  }
+  
+  @media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+    .tbl_orderan_berhasil {
+        margin: 8% 0 0 20%;
+        width: calc(85% - 300px);
+    }
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .tbl_orderan_berhasil {
+        margin: 12% 0 0 15%;
+        width: calc(85% - 100px);
+    }
+  }

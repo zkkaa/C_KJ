@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.cont_data-page-layanan {
+  position: relative;
+  margin: 7vh 30px 0 120px;
+  width: calc(100% - 120px);
+  height: 78.5vh;
+  padding: 2% 2% 2% 2%;
+  position: fixed;
+}
+
+/* menu */
+.cont_data-page-layanan .menu_page_layanan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 7vh;
+}
+
+.cont_data-page-layanan .menu_page_layanan li {
+  list-style: none;
+}
+
+.cont_data-page-layanan .menu_page_layanan a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 20px;
+  color: grey;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_barang {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_layanan {
+  width: 50%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  overflow: hidden;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_pelanggan {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.active2 {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  height: 100px;
+}
+
+.active2 span {
+  color: black;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_pelanggan:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_pelanggan span {
+  width: 100%;
+  text-align: center;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_pelanggan span:hover {
+  color: black;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_barang:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_barang span {
+  width: 100%;
+  text-align: center;
+}
+
+.cont_data-page-layanan .menu_page_layanan .menu_barang span:hover {
+  color: black;
+}
+
+/* btn_tambah */
+.cont_data-page-layanan .btn_tambah_barang {
+  display: flex;
+  justify-content: end;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.cont_data-page-layanan .btn_tambah_barang .btn_tambah {
+  display: flexbox;
+  width: 200px;
+  height: 4.8vh;
+  font-size: 16px;
+  text-align: center;
+  align-content: center;
+  background-color: #6FB9E7;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.btn_tambah a {
+  text-decoration: none;
+  color: #000000;
+  margin: 10px;
+}
+
+/* inp_cari */
+.cont_data-page-layanan .inp_cari {
+  display: flex;
+  line-height: 50px;
+  height: 8%;
+  margin-top: 20px;
+}
+
+.cont_data-page-layanan .inp_cari .inp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.cont_data-page-layanan .inp_cari .inp button {
+  color: black;
+  cursor: pointer;
+}
+
+.cont_data-page-layanan .inp_cari .inp button:active {
+  background-color: #f3f3f3;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-inline-start: 5px;
+  margin: 0 0 0 0;
+}
+
+.inp button {
+  width: 50px;
+  height: 35px;
+  border: 1px solid black;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff;
+}
+
+.inp button i {
+  font-size: 20px;
+}
+
+/* tbl_data_page-layanan */
+.cont_data-page-layanan .tbl_data_page-layanan {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+  width: 100.8%;
+  margin-top: 2vh;
+  margin-left: -0.7vw;
+  overflow-y: scroll;
+}
+
+.tbl_data_page-layanan .produk-terdaftar-page-layanan {
+  height: 20vh;
+  min-width: 23%;
+  max-width: 23%;
+  margin: 1%;
+  border-radius: 15px;
+}
+
+.produk-terdaftar-page-layanan .li-produk-page-layanan {
+  list-style: none;
+}
+
+.li-produk-page-layanan .div_terdaftar-page-layanan {
+  display: flex;
+  min-width: 100%;
+  max-width: 100%;
+  height: 20vh;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.div_terdaftar-page-layanan .gambar_terdaftar-page-layanan {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.div_terdaftar-page-layanan .gambar_terdaftar-page-layanan img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.div_terdaftar-page-layanan .keterangan_terdaftar-page-layanan {
+  width: 65%;
+  height: 100%;
+  font-size: 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.keterangan_terdaftar-page-layanan .div-top-page-layanan {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.div-top-page-layanan .nama_terdaftar-page-layanan {
+  height: 100%;
+  width: 80%;
+  align-content: center;
+  padding-left: 3%;
+}
+
+.nama_terdaftar-page-layanan .produk-pl {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.div-top-page-layanan .btn-edit-pl {
+  height: 50%;
+  width: 2.6vw;
+  border: none;
+  border-top-right-radius: 15px;
+  margin-right: 20px;
+}
+
+.div-top-page-layanan .btn-edit-pl button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-top-right-radius: 15px;
+  color: #5E95FE;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.div-top-page-layanan .btn-hapus-pl {
+  height: 50%;
+  width: 2.6vw;
+  border: none;
+  margin-right: 20px;
+}
+
+.div-top-page-layanan .btn-hapus-pl button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: red;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.btn_terdaftar button:active {
+  color: #000000;
+}
+
+button svg {
+  padding-top: 10%;
+}
+
+.keterangan_terdaftar-page-layanan .div-bottom-pl {
+  width: 100%;
+  height: 50%;
+  border-bottom-right-radius: 15px;
+}
+
+.div-bottom-pl .stok-pl {
+  height: 45%;
+  width: 100%;
+  align-content: center;
+  padding-left: 3%;
+  padding-top: 8%;
+  font-weight: 600;
+}
+
+.div-bottom-pl .kurangtambah-pl {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding-left: 3%;
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .cont_data-page-layanan  {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+  .cont_data-page-layanan .menu_page_layanan a {
+    font-size: 19px;
+  }
+  .cont_data-page-layanan .btn_tambah_barang .btn_tambah {
+    width: 185px;
+    font-size: 15px;
+  }
+  .li-produk-page-layanan .div_terdaftar-page-layanan {
+    height: 18vh;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .cont_data-page-layanan  {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+  .cont_data-page-layanan .menu_page_layanan a {
+    font-size: 17.5px;
+  }
+  .cont_data-page-layanan .btn_tambah_barang .btn_tambah {
+    width: 175px;
+    font-size: 14.5px;
+  }
+  .tbl_data_page-layanan .produk-terdaftar-page-layanan {
+    height: 17vh;
+    min-width: 31%;
+    max-width: 31%;
+  }
+  .li-produk-page-layanan .div_terdaftar-page-layanan {
+    height: 17vh;
+  }
+  .div-top-page-layanan .nama_terdaftar-page-layanan,
+  .div-bottom-pl .stok-pl,
+  .div-bottom-pl .kurangtambah-pl {
+  padding-left: 4.5%;
+  }
+  button svg {
+    width: 17px;
+  }
+  .div-top-page-layanan .btn-edit-pl {
+    height: 50%;
+    padding-top: 10%;
+    width: 3.5vw;
+  }
+  .div-top-page-layanan .btn-hapus-pl {
+    width: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_data-page-layanan  {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+  .cont_data-page-layanan .menu_page_layanan a {
+    font-size: 16.5px;
+  }
+  .cont_data-page-layanan .btn_tambah_barang .btn_tambah {
+    width: 165px;
+    font-size: 13.5px;
+  }
+  .tbl_data_page-layanan .produk-terdaftar-page-layanan {
+    height: 16vh;
+    min-width: 31%;
+    max-width: 31%;
+  }
+  .li-produk-page-layanan .div_terdaftar-page-layanan {
+    height: 16vh;
+  }
+  .div-top-page-layanan .nama_terdaftar-page-layanan,
+  .div-bottom-pl .stok-pl,
+  .div-bottom-pl .kurangtambah-pl {
+  padding-left: 6%;
+  }
+  .div_terdaftar-page-layanan .keterangan_terdaftar-page-layanan {
+    font-size: 14px;
+  }
+  button svg {
+    width: 17px;
+  }
+  .div-top-page-layanan .btn-edit-pl {
+    height: 55%;
+    padding-top: 10%;
+    width: 3.5vw;
+  }
+  .div-top-page-layanan .btn-hapus-pl {
+    width: 3.5vw;
+  }
+}

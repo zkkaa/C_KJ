@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.cont_data-page-pelanggan {
+  position: relative;
+  margin: 7vh 30px 0 120px;
+  width: calc(100% - 120px);
+  height: 78.5vh;
+  padding: 2% 2% 2% 2%;
+  position: fixed;
+}
+
+/* menu */
+.cont_data-page-pelanggan .menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 7vh;
+}
+
+.cont_data-page-pelanggan .menu li {
+  list-style: none;
+}
+
+.cont_data-page-pelanggan .menu a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 20px;
+  color: grey;
+}
+
+.cont_data-page-pelanggan .menu .menu_barang {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.cont_data-page-pelanggan .menu .menu_layanan {
+  width: 50%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.cont_data-page-pelanggan .menu .menu_pelanggan {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+  overflow: hidden;
+}
+
+.active3 {
+  background-color: rgba(38, 138, 201, 0.5);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  height: 100px;
+}
+
+.active3 span {
+  color: #000000;
+}
+
+.cont_data-page-pelanggan .menu .menu_barang:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.cont_data-page-pelanggan .menu .menu_barang span {
+  width: 100%;
+  text-align: center;
+}
+
+.cont_data-page-pelanggan .menu .menu_barang span:hover {
+  color: black;
+}
+
+.cont_data-page-pelanggan .menu .menu_layanan:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.cont_data-page-pelanggan .menu .menu_layanan span {
+  width: 100%;
+  text-align: center;
+}
+
+.cont_data-page-pelanggan .menu .menu_layanan span:hover {
+  color: black;
+}
+
+/* btn_tambah */
+.cont_data-page-pelanggan .btn_tambah_barang {
+  display: flex;
+  justify-content: end;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.cont_data-page-pelanggan .btn_tambah_barang .btn_tambah {
+  display: flexbox;
+  width: 200px;
+  height: 4.5vh;
+  font-size: 16px;
+  text-align: center;
+  align-content: center;
+  background-color: #6FB9E7;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.btn_tambah a {
+  text-decoration: none;
+  color: #000000;
+  margin: 10px;
+}
+
+/* inp_cari */
+.cont_data-page-pelanggan .inp_cari {
+  display: flex;
+  line-height: 50px;
+  height: 8%;
+  margin-top: 20px;
+}
+
+.cont_data-page-pelanggan .inp_cari .inp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.cont_data-page-pelanggan .inp_cari .inp button {
+  color: black;
+  cursor: pointer;
+}
+
+.cont_data-page-pelanggan .inp_cari .inp button:active {
+  background-color: #f3f3f3;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-inline-start: 5px;
+  margin: 0 0 0 0;
+}
+
+.inp button {
+  width: 50px;
+  height: 35px;
+  border: 1px solid black;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff;
+}
+
+.inp button i {
+  font-size: 20px;
+}
+
+/* tbl_data_pelanggan */
+.cont_data-page-pelanggan .tbl_data_page-pelanggan {
+  width: 100%;
+  height: 85%;
+  margin-top: 15px;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+.tbl_data_page-pelanggan .list-page-pelanggan{
+  width: 100%;
+  height: 59.9vh;
+  overflow-y: scroll;
+}
+
+.list-page-pelanggan .css-serial-page-pelanggan {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.list-page-pelanggan .css-serial-page-pelanggan td {
+  height: 6vh;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.list-page-pelanggan .css-serial-page-pelanggan .tabel_judul-page-pelaggan {
+  height: 6vh;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.no_pelanggan {
+  width: 3vw;
+}
+
+.nama_pelanggan {
+  width: 20vw;
+}
+
+.nomer_pelanggan {
+  width: 20vw;
+}
+
+.aksi-pelanggan {
+  width: 10vw;
+}
+
+.css-serial-page-pelanggan .aksi-edit-hapus {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list-page-pelanggan .css-serial-page-pelanggan button {
+  width: 4.5vw;
+  height: 5vh;
+  border-radius: 10px;
+}
+
+.list-page-pelanggan .btn-edit-pelanggan {
+  background-color: #ffffff;
+  border: none;
+  color: #5E95FE;
+  cursor: pointer;
+}
+
+.list-page-pelanggan .btn-hapus-pelanggan {
+  background-color: #ffffff;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.list-page-pelanggan .btn-edit-pelanggan:active,
+.list-page-pelanggan .btn-hapus-pelanggan:active {
+  color: #61E16E;
+
+}
+
+.list-page-pelanggan .css-serial-page-pelanggan button svg {
+  font-size: 26px;
+}
+
+/* Penomoran otomatis pada baris */
+.css-serial-page-pelanggan {
+  counter-reset: serial-number;  /* Atur penomoran ke 0 */
+}
+
+.css-serial-page-pelanggan td:first-child:before {
+  counter-increment: serial-number;  /* Kenaikan penomoran */
+  content: counter(serial-number);  /* Tampilan counter */
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .cont_data-page-pelanggan  {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+  .cont_data-page-pelanggan .menu a {
+    font-size: 19px;
+  }
+  .cont_data-page-pelanggan .btn_tambah_barang .btn_tambah {
+    width: 195px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .cont_data-page-pelanggan  {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+  .cont_data-page-pelanggan .menu a {
+    font-size: 17.5px;
+  }
+  .cont_data-page-pelanggan .btn_tambah_barang .btn_tambah {
+    width: 185px;
+    font-size: 14.5px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_data-page-pelanggan  {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+  .cont_data-page-pelanggan .menu a {
+    font-size: 16.5px;
+  }
+  .cont_data-page-pelanggan .btn_tambah_barang .btn_tambah {
+    width: 175px;
+    font-size: 13.5px;
+  }
+}

@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+.cont_data-page-barang {
+  position: relative;
+  margin: 7vh 30px 0 120px;
+  width: calc(100% - 120px);
+  height: 78.5vh;
+  padding: 2% 2% 2% 2%;
+  position: fixed;
+}
+
+/* menu */
+.cont_data-page-barang .menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 7vh;
+}
+
+.cont_data-page-barang .menu li {
+  list-style: none;
+}
+
+.cont_data-page-barang .menu a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 20px;
+  color: grey;
+}
+
+.cont_data-page-barang .menu .menu_barang {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+  overflow: hidden;
+}
+
+.cont_data-page-barang .menu .menu_layanan {
+  width: 50%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.cont_data-page-barang .menu .menu_pelanggan {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.active1 {
+  background-color: rgba(38, 138, 201, 0.5);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  height: 100px;
+  color: #ffffff;
+}
+
+.active1 span {
+  color: black;
+}
+
+.cont_data-page-barang .menu_pelanggan:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.cont_data-page-barang .menu_pelanggan span {
+  width: 100%;
+  text-align: center;
+}
+
+.cont_data-page-barang .menu_pelanggan span:hover {
+  color: black;
+}
+
+.cont_data-page-barang .menu_layanan:hover {
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+}
+
+.cont_data-page-barang .menu_layanan span {
+  width: 100%;
+  text-align: center;
+}
+
+.cont_data-page-barang .menu_layanan span:hover {
+  color: black;
+}
+
+/* btn_tambah */
+.cont_data-page-barang .btn_tambah_barang {
+  display: flex;
+  justify-content: end;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.cont_data-page-barang .btn_tambah_barang .btn_tambah {
+  display: flexbox;
+  width: 200px;
+  height: 4.8vh;
+  font-size: 16px;
+  text-align: center;
+  align-content: center;
+  background-color: #6fb9e7;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.btn_tambah a {
+  text-decoration: none;
+  color: #000000;
+  margin: 10px;
+}
+
+/* inp_cari */
+.cont_data-page-barang .inp_cari {
+  display: flex;
+  line-height: 50px;
+  height: 8%;
+  margin-top: 20px;
+}
+
+.cont_data-page-barang .inp_cari .inp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.cont_data-page-barang .inp_cari .inp button {
+  color: black;
+  cursor: pointer;
+}
+
+.cont_data-page-barang .inp_cari .inp:active button {
+  background-color: #f3f3f3;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-inline-start: 5px;
+  margin: 0 0 0 0;
+}
+
+.inp button {
+  width: 50px;
+  height: 35px;
+  border: 1px solid black;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #ffffff;
+}
+
+.inp button i {
+  font-size: 20px;
+}
+
+/* tbl_data-data-barang */
+.cont_data-page-barang .div_box_barang-pb {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+  width: 100.8%;
+  margin-top: 2vh;
+  margin-left: -0.7vw;
+  overflow-y: scroll;
+}
+
+.div_box_barang-pb .produk-terdaftar-p-barang {
+  height: 20vh;
+  min-width: 23%;
+  max-width: 23%;
+  margin: 1%;
+  border-radius: 15px;
+}
+
+.produk-terdaftar-p-barang .li-produk-p-barang {
+  list-style: none;
+}
+
+.li-produk-p-barang .box_barang {
+  display: flex;
+  min-width: 100%;
+  max-width: 100%;
+  height: 20vh;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.box_barang .gambar_terdaftar-box {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.box_barang .gambar_terdaftar-box img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.box_barang .keterangan_terdaftar-box-b {
+  width: 65%;
+  height: 100%;
+  font-size: 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.keterangan_terdaftar-box-b .div-top-box-b {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  border-top-right-radius: 15px;
+}
+
+.div-top-box-b .nama_terdaftar-box {
+  height: 100%;
+  width: 80%;
+  align-content: center;
+  padding-left: 3%;
+}
+
+.nama_terdaftar-box .produk-box-b {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.div-top-box-b .btn-edit-box-b {
+  height: 50%;
+  width: 2.6vw;
+  border: none;
+  border-top-right-radius: 15px;
+  margin-right: 2px;
+}
+
+.div-top-box-b .btn-edit-box-b button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-top-right-radius: 15px;
+  color: #5e95fe;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.div-top-box-b .btn-hapus-box-b {
+  height: 50%;
+  width: 2.6vw;
+  border: none;
+  margin-right: 2px;
+}
+
+.div-top-box-b .btn-hapus-box-b button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: red;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.btn_box-b button:active {
+  color: #000000;
+}
+
+button svg {
+  padding-top: 10%;
+}
+
+.keterangan_terdaftar-box-b .div-bottom-box-b {
+  width: 100%;
+  height: 50%;
+  border-bottom-right-radius: 15px;
+}
+
+.div-bottom-box-b .stok-box-b {
+  height: 45%;
+  width: 100%;
+  align-content: center;
+  padding-left: 3%;
+  padding-top: 8%;
+  font-weight: 600;
+}
+
+.div-bottom-box-b .kurangtambah-box-b {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.container_1.blur {
+  position: relative;
+}
+
+.container_1.blur::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.5
+  ); /* Warna abu-abu dengan 50% transparansi */
+  backdrop-filter: blur(2px);
+  z-index: 999;
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .cont_data-page-barang {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+  .li-produk-p-barang .box_barang {
+    height: 18vh;
+  }
+  .cont_data-page-barang .menu a {
+    font-size: 19px;
+  }
+  .cont_data-page-barang .btn_tambah_barang .btn_tambah {
+    width: 185px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .cont_data-page-barang {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+  .div_box_barang-pb .produk-terdaftar-p-barang {
+    height: 17vh;
+    min-width: 31%;
+    max-width: 31%;
+  }
+  .li-produk-p-barang .box_barang {
+    height: 17vh;
+  }
+  .div-top-box-b .nama_terdaftar-box,
+  .div-bottom-box-b .stok-box-b,
+  .div-bottom-box-b .kurangtambah-box-b {
+    padding-left: 4.5%;
+  }
+  button svg {
+    width: 17px;
+  }
+  .div-top-box-b .btn-edit-box-b {
+    height: 50%;
+    margin-top: 10%;
+    width: 3.5vw;
+  }
+  .div-top-box-b .btn-hapus-box-b {
+    width: 3.5vw;
+  }
+  .cont_data-page-barang .menu a {
+    font-size: 17.5px;
+  }
+  .cont_data-page-barang .btn_tambah_barang .btn_tambah {
+    width: 175px;
+    font-size: 14.5px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_data-page-barang {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+  .div_box_barang-pb .produk-terdaftar-p-barang {
+    height: 16vh;
+    min-width: 31%;
+    max-width: 31%;
+  }
+  .li-produk-p-barang .box_barang {
+    height: 16vh;
+  }
+  .box_barang .keterangan_terdaftar-box-b {
+    font-size: 14px;
+  }
+  .div-top-box-b .nama_terdaftar-box,
+  .div-bottom-box-b .stok-box-b,
+  .div-bottom-box-b .kurangtambah-box-b {
+    padding-left: 6%;
+  }
+  button svg {
+    width: 17px;
+  }
+  .div-top-box-b .btn-edit-box-b {
+    height: 55%;
+    padding-top: 10%;
+    width: 3.5vw;
+  }
+  .div-top-box-b .btn-hapus-box-b {
+    width: 3.5vw;
+  }
+  .cont_data-page-barang .menu a {
+    font-size: 16.5px;
+  }
+  .cont_data-page-barang .btn_tambah_barang .btn_tambah {
+    width: 165px;
+    font-size: 13.5px;
+  }
+}

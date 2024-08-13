@@ -1,0 +1,85 @@
+.Div_Hapus-Data-Pelanggan {
+  position: fixed;
+  width: 320px;
+  height: 170px;
+  margin-top: 35vh;
+  margin-left: 41vw;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  z-index: 99999;
+}
+
+.Div_Hapus-Data-Pelanggan .Hapus-Data-Pelanggan {
+  width: 100%;
+  height: 100%;
+}
+
+.Hapus-Data-Pelanggan .popup-judul {
+  height: 5.5vh;
+  width: 100%;
+  align-content: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Hapus-Data-Pelanggan .popup-des {
+  height: 6vh;
+  width: 100%;
+  font-size: 14px;
+}
+
+.Hapus-Data-Pelanggan .btn_tidak-ya {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 4vh;
+}
+
+.btn_tidak-ya .btn-tidak,
+.btn_tidak-ya .btn-ya-hpel {
+  width: 35%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.btn_tidak-ya .btn-tidak {
+  background-color: red;
+}
+
+.btn_tidak-ya .btn-tidak:active {
+  border: 1px solid red;
+  color: red;
+  background-color: #ffffff;
+}
+
+.btn_tidak-ya .btn-ya-hpel {
+  background-color: #61e16e;
+}
+
+.btn_tidak-ya .btn-ya-hpel:active {
+  border: 1px solid #61e16e;
+  color: #61e16e;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .Div_Hapus-Data-Pelanggan {
+    margin: 35vh 0 0 38.5vw;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .Div_Hapus-Data-Pelanggan {
+    margin: 35vh 0 0 36.5vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .Div_Hapus-Data-Pelanggan {
+    margin: 35vh 0 0 30vw;
+  }
+}

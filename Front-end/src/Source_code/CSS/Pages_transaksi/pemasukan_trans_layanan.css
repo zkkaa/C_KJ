@@ -1,0 +1,492 @@
+.cont_transaksi_pemasukan {
+  position: fixed;
+  margin: 7vh 30px 0 120px;
+  width: calc(100% - 120px);
+  height: 82vh;
+  padding: 2% 2% 2% 2%;
+}
+
+/* menu */
+.cont_transaksi_pemasukan .transaksi_menu {
+  display: flex;
+  justify-content: center;
+}
+
+.transaksi_menu li {
+  list-style: none;
+}
+
+.transaksi_menu a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding-top: 2vh;
+  color: grey;
+}
+
+.transaksi_menu .div_pemasukan_t {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.transaksi_menu .div_pengeluaran_t {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(38, 138, 201, 0.5);
+}
+
+.transaksi_menu #active5 {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.div_pengeluaran_t .pengeluaran_t:hover {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/* tbl_data_produk-transaksi */
+.cont_transaksi_pemasukan .tbl_data_produk-transaksi {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+/* left */
+.tbl_data_produk-transaksi .page-transaksi-left {
+  width: 60%;
+  height: 100%;
+  padding-right: 1%;
+}
+
+/* left>top */
+.page-transaksi-left .transaksi-left-top {
+  width: 100%;
+  height: 12%;
+  align-content: center;
+  padding-left: 1%;
+  border-bottom: 2px solid grey;
+}
+
+.page-transaksi-left .transaksi-left-top button {
+  width: 110px;
+  height: 5.5vh;
+  border-radius: 10px;
+  border: none;
+  margin-right: 1vw;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+  background-color: #ffffff;
+}
+
+.page-transaksi-left .transaksi-left-top button:hover {
+  background-color: #6fb9e7;
+  color: black;
+}
+
+#active9 {
+  background-color: #6fb9e7;
+}
+
+/* left>bottom */
+.page-transaksi-left .transaksi-left-bottom-semua {
+  display: flex;
+  flex-wrap: wrap;
+  height: 88%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.transaksi-left-bottom-semua .produk-terdaftar-pt {
+  position: relative;
+  width: 46%;
+  height: 25.7%;
+  margin: 2%;
+  border-radius: 15px;
+}
+
+.produk-terdaftar-pt .li-produk-pt {
+  list-style: none;
+}
+
+.li-produk-pt .div_terdaftar-pt {
+  display: flex;
+  width: 100%;
+  height: 17vh;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 10px grey;
+  cursor: pointer;
+}
+
+.div_terdaftar-pt .gambar_terdaftar-pt {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.div_terdaftar-pt .gambar_terdaftar-pt img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.div_terdaftar-pt .keterangan_terdaftar-pt {
+  width: 65%;
+  height: 100%;
+  font-size: 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.keterangan_terdaftar-pt .div-top-pt {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  border-top-right-radius: 15px;
+}
+
+.div-top-pt .nama_terdaftar-pt {
+  height: 100%;
+  width: 80%;
+  align-content: center;
+  padding-left: 3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nama_terdaftar-pt .produk-pt {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.keterangan_terdaftar-pt .div-bottom-pt {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  align-content: end;
+  text-align: end;
+  padding-right: 5%;
+  padding-bottom: 1.5%;
+  border-bottom-right-radius: 15px;
+}
+
+.div-bottom-pt .div_stok_trans {
+  width: 55%;
+  height: 6vh;
+  align-content: center;
+}
+
+.div-bottom-pt .div_stok_trans .stok_trans {
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  padding-left: 6%;
+}
+
+.div-bottom-pt .div_stok_trans .jmlh_stok_trans {
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  padding-left: 6%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.div-bottom-pt .div-pesan-pt {
+  width: 45%;
+  height: 6vh;
+  align-content: center;
+}
+
+.div-pesan-pt .pesan-pt {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  border: none;
+  margin-left: 5%;
+  color: black;
+  font-size: 16;
+  background-color: #5bc85b;
+  cursor: pointer;
+}
+
+.div-pesan-pt .pesan-pt:active {
+  color: #5bc85b;
+  border: 1.5px solid #5bc85b;
+  background-color: #ffffff;
+}
+
+/* right */
+.tbl_data_produk-transaksi .page-transaksi-right {
+  width: 40%;
+  height: 100%;
+  border-left: 2px solid grey;
+  padding-left: 1%;
+}
+
+/* judul */
+.page-transaksi-right .div-pesanan-pt {
+  width: 100%;
+  height: 5.5vh;
+  align-content: end;
+  border-bottom: 2px solid grey;
+}
+
+.div-pesanan-pt .pesanan {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/* tabel */
+.page-transaksi-right .tbl_data_pesanan-pt {
+  width: 100%;
+  height: 92%;
+}
+
+.list-pesanan-pt {
+  width: 100%;
+  height: 82%;
+  overflow-y: scroll;
+}
+
+.tbl_data_pesanan-pt table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tbl_data_pesanan-pt table td {
+  height: 5vh;
+  border-bottom: 0.5px solid rgb(211, 211, 211);
+}
+
+.tbl_data_pesanan-pt table .tabel_judul-pt {
+  height: 5vh;
+  background-color: #ffffff;
+  border-bottom: 2px solid grey;
+}
+
+.tbl_data_pesanan-pt table .bt-hps-pesanan {
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: red;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.tbl_data_pesanan-pt table .bt-hps-pesanan:active {
+  color: #000000;
+}
+
+/* pesan */
+.page-transaksi-right .transaksi_pesan-pt {
+  width: 100%;
+  height: 11vh;
+  border-top: 2px solid grey;
+}
+
+/* harga */
+.transaksi_pesan-pt .div_jumlah-harga-pt {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+.div_jumlah-harga-pt .div_total-pt {
+  height: 100%;
+  width: 50%;
+  align-content: center;
+}
+
+.div_jumlah-harga-pt .div_total-pt span {
+  font-size: 16px;
+}
+
+.div_jumlah-harga-pt .div_bayar-pt {
+  height: 100%;
+  width: 50%;
+  align-content: center;
+  text-align: end;
+}
+
+.div_jumlah-harga-pt .div_bayar-pt span {
+  font-size: 16px;
+  padding-right: 2vw;
+}
+
+/* btn */
+.transaksi_pesan-pt .div_btn_bayar {
+  height: 50%;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.div_btn_bayar button {
+  width: 95%;
+  height: 4.5vh;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  background-color: #5bc85b;
+}
+
+.div_btn_bayar button:active {
+  background-color: #ffffff;
+  color: #5bc85b;
+  border: 1px solid #5bc85b;
+}
+
+.contain .blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.contain .blur::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.5
+  ); /* Warna abu-abu dengan 50% transparansi */
+  backdrop-filter: blur(10px);
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .cont_transaksi_pemasukan {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+  .transaksi_menu a {
+    font-size: 19px;
+  }
+  .page-transaksi-left .transaksi-left-top button {
+    width: 100px;
+    font-size: 15.5px;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .cont_transaksi_pemasukan {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+  .transaksi_menu a {
+    font-size: 17.5px;
+  }
+  .page-transaksi-left .transaksi-left-top button {
+    width: 90px;
+    font-size: 15px;
+  }
+  .transaksi-left-bottom-semua .produk-terdaftar-pt {
+    height: 25%;
+  }
+  .li-produk-pt .div_terdaftar-pt {
+    height: 16vh;
+  }
+  .div-top-pt .nama_terdaftar-pt {
+    padding-left: 4%;
+  }
+  .div-bottom-pt .div_stok_trans .stok_trans,
+  .div-bottom-pt .div_stok_trans .jmlh_stok_trans {
+    padding-left: 8%;
+  }
+  .div_terdaftar-pt .keterangan_terdaftar-pt {
+    font-size: 15px;
+  }
+  .tbl_data_pesanan-pt table th,
+  .tbl_data_pesanan-pt table td {
+    font-size: 15px;  
+  }
+  .div_btn_bayar button {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_transaksi_pemasukan {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+  .transaksi_menu a {
+    font-size: 16.5px;
+  }
+  .page-transaksi-left .transaksi-left-top button {
+    width: 80px;
+    font-size: 14px;
+    margin-right: 1.5vw;
+  }
+  .transaksi-left-bottom-semua .produk-terdaftar-pt {
+    height: 23%;
+  }
+  .li-produk-pt .div_terdaftar-pt {
+    height: 15vh;
+  }
+  .div-top-pt .nama_terdaftar-pt {
+    padding-left: 5%;
+  }
+  .div-bottom-pt .div_stok_trans .stok_trans,
+  .div-bottom-pt .div_stok_trans .jmlh_stok_trans {
+    padding-left: 10%;
+  }
+  .div_terdaftar-pt .keterangan_terdaftar-pt {
+    font-size: 14.5px;
+  }
+  .div-bottom-pt .div-pesan-pt {
+    width: 50%;
+  }
+  .div-pesan-pt .pesan-pt {
+    font-size: 12px;
+  }
+  .div-pesanan-pt .pesanan {
+    font-size: 25px;
+  }
+  .tbl_data_pesanan-pt table th,
+  .tbl_data_pesanan-pt table td {
+    font-size: 14px;  
+  }
+  .div_btn_bayar button {
+    font-size: 16px;
+  }
+}

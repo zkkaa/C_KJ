@@ -1,0 +1,63 @@
+/* print */
+.print_page {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #ffffff; */
+    padding-top: 5%;
+}
+
+.btn-detail-print {
+    display: flex;
+    width: 25%;
+    height: 70px;
+    margin: 5mm auto;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.btn-detail-print a {
+    display: flex;
+    height: 70px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.btn-detail-print .kembali {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #5BC85B;
+    border: 1px solid #5BC85B;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.btn-detail-print .kembali:active {
+    border: none;
+    box-shadow: none;
+    color: black;
+    background-color: #5BC85B;
+}
+
+.btn-detail-print #print {
+    width: 30%;
+    height: 60%;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    background-color: #5BC85B;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.btn-detail-print #print:active {
+    box-shadow: none;
+    color: #5BC85B;
+    border: 1px solid #5BC85B;
+    background-color: #ffffff;
+}

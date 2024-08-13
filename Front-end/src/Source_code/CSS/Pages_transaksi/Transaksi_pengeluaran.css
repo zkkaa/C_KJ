@@ -1,0 +1,224 @@
+.cont_transaksi_pengeluaran {
+  margin: 7vh 30px 0 120px;
+  width: calc(100% - 120px);
+  height: 83.6vh;
+  padding: 2% 2% 2% 2%;
+  position: fixed;
+}
+
+/* menu */
+.cont_transaksi_pengeluaran .transaksi_menu {
+  display: flex;
+  justify-content: center;
+}
+
+.transaksi_menu li {
+  list-style: none;
+}
+
+.transaksi_menu a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding-top: 2vh;
+  color: grey;
+}
+
+.transaksi_menu .div_pemasukan_t {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+background-color: rgba(38, 138, 201, 0.5);
+}
+
+.transaksi_menu .div_pengeluaran_t {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+background-color: rgba(38, 138, 201, 0.5);
+}
+
+.transaksi_menu #active6 {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.div_pengeluaran_t .pengeluaran_t:hover {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/* tbl_inp-pengeluaran */
+.tbl_transaksi_pengeluaran {
+  position: relative;
+  margin: 20px 0 0 0;
+  width: calc(100% - 210px);
+  height: 80vh;
+  position: fixed;
+}
+
+.tbl_tran_pengeluaran {
+  position: relative;
+  margin: auto;
+  width: 44vw;
+  height: 75vh;
+  border-radius: 20px;
+  border: 1px solid black;
+  align-content: center;
+  background-color: #ffffff;
+}
+
+.tbl_tran_pengeluaran .tambah_data_tran_peng {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+}
+
+.tambah_data_tran_peng .div_judul_tran_peng {
+  display: flex;
+  height: 8vh;
+}
+
+.tambah_data_tran_peng .judul_tran_peng {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.tambah_data_tran_peng .inp_tran_pengeluaran {
+  display: flex;
+  height: 72%;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
+
+.tambah_data_tran_peng .inp_nama_tran {
+  width: 100%;
+  height: 100%;
+}
+
+.tambah_data_tran_peng .span_input_tran_peng {
+  font-size: 18px;
+  margin-left: 15px;
+  color: #000000;
+}
+
+.tambah_data_tran_peng .input_Btran_peng,
+.tambah_data_tran_peng .input_nb_tran_peng,
+.tambah_data_tran_peng .input_satuan_peng,
+.tambah_data_tran_peng .input_harga_peng {
+  width: 100%;
+  height: 4.5vh;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  padding-left: 5px;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.tambah_data_tran_peng .div_nama_tran_peng {
+  margin-top: 1.5vh;
+}
+
+.tambah_data_tran_peng .div_nb_peng {
+  margin-top: 1.5vh;
+}
+
+.tambah_data_tran_peng .btn_simpanhapus_tran_peng {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.tambah_data_tran_peng .btn_simpan-barang_peng,
+.tambah_data_tran_peng .btn_hapus_barang_peng {
+  width: 45%;
+  height: 5vh;
+  margin-top: 5vh;
+}
+
+.tambah_data_tran_peng .simpan-barang_peng {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #6fb9e7;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.tambah_data_tran_peng .simpan-barang_peng:active {
+  background: #ffffff;
+  color: black;
+  border: 1px solid #6fb9e7;
+}
+
+.tambah_data_tran_peng .hapus-barang_peng {
+  width: 100%;
+  height: 100%;
+  color: red;
+  border-radius: 30px;
+  border: 1px solid red;
+  background: none;
+  cursor: pointer;
+}
+
+.tambah_data_tran_peng .hapus-barang_peng:active {
+  background: red;
+  color: #ffffff;
+  border: none;
+}
+
+.contain.blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.contain.blur::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.5); /* Warna abu-abu dengan 50% transparansi */
+  backdrop-filter: blur(10px);
+} 
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .cont_transaksi_pengeluaran  {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .cont_transaksi_pengeluaran  {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_transaksi_pengeluaran  {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+}

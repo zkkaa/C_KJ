@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-login {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-login .bg-login-left {
+  width: 50%;
+  height: 100%;
+}
+
+.bg-login-left .left-top {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 55%;
+}
+
+.bg-login-left .left-top .lingkaran {
+  width: 40vw;
+  height: 85vh;
+  margin-left: -15vw;
+  margin-top: -40vh;
+  border-radius: 47%;
+  background-color: #d4e5ff;
+}
+
+.bg-login-left .left-top .login-logo {
+  width: 25vw;
+  height: 50vh;
+  margin-top: 5vh;
+  margin-left: -35vh;
+  background-color: none;
+  background-size: cover;
+}
+
+.login-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-login-left .left-bottom {
+  width: 100%;
+  height: 45%;
+  align-content: end;
+}
+
+.left-bottom .box-deskip {
+  display: flex;
+  width: 25vw;
+  height: 18vh;
+  margin: 4vh 3vw;
+  border-radius: 15px;
+  box-shadow: 2px 4px 10px grey;
+  background-color: #ffffff;
+}
+
+.box-deskip .span {
+  width: 60%;
+  height: 100%;
+  align-content: center;
+  padding-left: 1vw;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.box-deskip .span span {
+  font-size: 1.3vw;
+  font-weight: 300;
+}
+
+.box-deskip .gambar {
+  width: 41%;
+  height: 100%;
+}
+
+.box-deskip .gambar img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bg-login .bg-login-right {
+  width: 50%;
+  height: 100%;
+  align-content: end;
+}
+
+.bg-login-right .div-miring {
+  width: 100%;
+  height: 50%;
+}
+
+.div-miring .miring {
+  position: fixed;
+  width: 90vw;
+  height: 160vh;
+  margin-left: 2vw;
+  margin-top: -15vh;
+  border-radius: 50%;
+  border: 3.5vw solid #b2dfb4;
+}
+
+.login-box {
+  position: absolute;
+  top: 15%;
+  right: 200px;
+  width: 400px;
+  height: 480px;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 10px 35px 20px gray;
+  border-radius: 10px;
+  padding: 0 50px 0px 50px;
+  margin: auto;
+}
+
+.login-box p {
+  margin: 30px 0 50px 0;
+  padding: 0;
+  color: black;
+  text-align: left;
+  font-size: 27px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: grey;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box #username {
+  margin-bottom: 50px;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -24px;
+}
+
+.button-login {
+  width: 100%;
+  border-radius: 10%;
+  box-shadow: 0 10px 10px gray;
+  border: grey;
+  margin-top: 20%;
+}
+
+.button-login button {
+  font-size: 16px;
+  font-weight: 550;
+  font-style: normal;
+  width: 100%;
+  height: 35px;
+  cursor: pointer;
+}
+
+.button-login button:hover {
+  color: #fff;
+  background-color: rgb(144, 238, 144);
+  border: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container.blur {
+  position: relative;
+}
+
+.container.blur::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.5
+  ); /* Warna abu-abu dengan 50% transparansi */
+  backdrop-filter: blur(10px);
+}
+
+.no-hover:hover {
+  color: initial; /* Ganti dengan warna awal teks tombol Anda */
+  background-color: initial; /* Ganti dengan warna awal tombol Anda */
+  border: 1.6px solid gray; /* Ganti dengan warna awal border tombol Anda */
+  cursor: default;
+}
+
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .login-box {
+    top: 15%;
+    right: 166px;
+    height: 480px;
+  }
+  .bg-login-left .left-top .lingkaran {
+    height: 83vh;
+  }
+  .bg-login-left .left-top .login-logo {
+    width: 30vw;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-left: -40vh;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .login-box {
+    top: 15%;
+    right: 133px;
+    height: 480px;
+  }
+  .bg-login-left .left-top .lingkaran {
+    height: 80vh;
+  }
+  .bg-login-left .left-top .login-logo {
+    width: 32vw;
+    height: 43vh;
+    margin-top: 7vh;
+    margin-left: -35vh;
+  }
+  .div-miring .miring {
+    border: 4vw solid #b2dfb4;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .login-box {
+    top: 15%;
+    right: 100px;
+    height: 480px;
+  }
+  .bg-login-left .left-top .lingkaran {
+    height: 78vh;
+  }
+  .bg-login-left .left-top .login-logo {
+    width: 37vw;
+    height: 42vh;
+    margin-top: 7vh;
+    margin-left: -28vh;
+  }
+  .div-miring .miring {
+    position: fixed;
+    width: 90vw;
+    height: 160vh;
+    margin-left: 5vw;
+    margin-top: -10vh;
+    border-radius: 50%;
+    border: 4.5vw solid #b2dfb4;
+  }
+}

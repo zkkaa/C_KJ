@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+:root {
+  /* ------COLOR------ */
+  --bg: #fefbfb;
+  --bg-cont: #ffffff;
+  --txt1: #5e95fe;
+  --block-actv: #61e16e;
+  --blck: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.navigasi {
+  display: flexbox;
+  position: fixed;
+  top: 0;
+  left: 120px;
+  max-height: 55px;
+  min-height: 55px;
+  width: calc(100% - 120px);
+  background-color: #ffffff;
+  box-shadow: 10px 0 15px grey;
+  overflow: hidden;
+  align-content: center;
+  padding-left: 2.2vw;
+  padding-right: 2.2vw;
+  z-index: 99;
+}
+
+.navigasi .div_navigasi {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+}
+
+.navigasi .div_navigasi .tanggal a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigasi .div_navigasi .tanggal a span {
+  font-size: 18px;
+}
+
+.navigasi .div_navigasi .user {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.navigasi .div_navigasi .user div {
+  padding-right: 5px;
+  height: 40px;
+}
+
+.navigasi .div_navigasi .user div i {
+  font-size: 35px;
+}
+
+.navigasi .div_navigasi .user span {
+  font-size: 18px;
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .navigasi {
+    left: 103.5px;
+    width: calc(100% - 103.5px);
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .navigasi {
+    left: 87px;
+    width: calc(100% - 87px);
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .navigasi {
+    left: 70px;
+    width: calc(100% - 70px);
+  }
+}

@@ -1,0 +1,71 @@
+.Div_PopUp_Login-Gagal {
+    position: absolute;
+    width: 25vw;
+    height: 27vh;
+    margin-top: 36vh;
+    margin-left: 37vw;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+.Div_PopUp_Login-Gagal .PopUp_Login-Gagal {
+    width: 100%;
+    height: 100%;
+}
+
+.PopUp_Login-Gagal .popup-gambar {
+    height: 6vh;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+.popup-gambar svg {
+    height: 7vh;
+    width: 4vw;
+    margin-top: 1.5vh;
+}
+
+.PopUp_Login-Gagal .popup-judul {
+    height: 7vh;
+    width: 100%;
+    text-align: center;
+    align-content: end;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+
+.PopUp_Login-Gagal .popup-des {
+    height: 5vh;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: red;
+}
+
+.PopUp_Login-Gagal .btn_gagal-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4vh;
+    justify-content: end;
+}
+
+.btn_gagal-login .btn-ya {
+    width: 25%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+}
+
+.btn_gagal-login .btn-ya:active {
+    color: red;
+    border: 1px solid red;
+    background-color: #ffffff;
+}

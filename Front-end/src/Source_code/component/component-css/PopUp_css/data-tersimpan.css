@@ -1,0 +1,88 @@
+.Div_PopUp_Data-Tersimpan {
+  position: absolute;
+  width: 400px;
+  height: 201px;
+  margin-top: 35.5vh;
+  margin-left: 37.4vw;
+  border-radius: 15px;
+  padding: 1% 1%;
+  box-shadow: 2px 2px 5px grey;
+  background-color: #ffffff;
+  z-index: 99999;
+}
+
+.Div_PopUp_Data-Tersimpan .PopUp_Data-Tersimpan {
+  width: 100%;
+  height: 100%;
+}
+
+.PopUp_Data-Tersimpan .popup-gambar {
+  height: 6vh;
+  width: 100%;
+  text-align: center;
+  color: #61e16e;
+}
+
+.popup-gambar svg {
+  width: 3vw;
+  height: auto;
+}
+
+.PopUp_Data-Tersimpan .popup-judul {
+  height: 7vh;
+  width: 100%;
+  text-align: center;
+  align-content: end;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+.PopUp_Data-Tersimpan .popup-des {
+  height: 5vh;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.PopUp_Data-Tersimpan .btn_barang-ya {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 4vh;
+  justify-content: center;
+}
+
+.btn_barang-ya .btn-ya {
+  width: 25%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: #61e16e;
+  cursor: pointer;
+}
+
+.btn_barang-ya .btn-ya:active {
+  color: #61e16e;
+  border: 1px solid #61e16e;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .Div_PopUp_Data-Tersimpan {
+    margin: 35.5vh 0 0 36vw;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .Div_PopUp_Data-Tersimpan {
+    margin: 35.5vh 0 0 34vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .Div_PopUp_Data-Tersimpan {
+    margin: 35.5vh 0 0 26vw;
+  }
+}
+

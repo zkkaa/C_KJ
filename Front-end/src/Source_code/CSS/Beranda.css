@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.Cont_Beranda {
+  position: fixed;
+  margin: 7vh 0 0 120px;
+  width: calc(100% - 120px);
+  height: 69vh;
+  padding: 0.5% 2% 2% 2%;
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.Cont_Beranda li {
+  list-style: none;
+  width: 100%;
+}
+
+.Cont_Beranda .Cont_Atas {
+  height: 29%;
+  display: flexbox;
+  margin-bottom: 2%;
+}
+
+.Cont_Beranda .Cont_Atas .title,
+.Cont_Beranda .Cont_Bawah .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.Cont_Beranda .Cont_Atas .tabel {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.respon_beranda_menu1 {
+  display: flex;
+  justify-content: space-between;
+  width: 48.5%;
+  height: 100%;
+}
+
+.respon_beranda_menu2 {
+  display: flex;
+  justify-content: space-between;
+  width: 48.5%;
+  height: 100%;
+}
+
+.Cont_Beranda .Cont_Atas .tbl_pemasukan {
+  width: 47%;
+  height: 13vh;
+  border: 1px solid #44d453;
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.tbl_pemasukan .top1 {
+  background-color: #5bc85b;
+  height: 45%;
+  color: black;
+  align-content: center;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.judul_tabel {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#icon_tabel {
+  padding-top: 1.5%;
+  font-size: 20px;
+}
+
+.judul_tabel .ket_tabel {
+  align-content: center;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.Cont_Beranda .Cont_Atas .tbl_pengeluaran {
+  width: 47%;
+  height: 13vh;
+  border: 1px solid #d44444;
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.tbl_pengeluaran .top2 {
+  height: 45%;
+  color: black;
+  align-content: center;
+  background-color: #d44444;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.Cont_Beranda .Cont_Atas .tbl_saldo {
+  width: 47%;
+  height: 13vh;
+  border: 1px solid #6fb9e7;
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.tbl_saldo .top3 {
+  height: 45%;
+  color: black;
+  align-content: center;
+  background-color: #6fb9e7;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.Cont_Beranda .Cont_Atas .tbl_stok_barang {
+  width: 47%;
+  height: 13vh;
+  border: 1px solid grey;
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.tbl_stok_barang .top4 {
+  height: 45%;
+  color: black;
+  align-content: center;
+  background-color: grey;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.div_tabel_harga_beranda {
+  height: 55%;
+  width: 100%;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  align-content: center;
+}
+
+.B_harga_pemasukan,
+.B_harga_pengeluaran,
+.B_harga_saldo {
+  margin-top: 1%;
+  text-align: center;
+  line-height: 4vh;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.Cont_Beranda .Cont_Bawah {
+  margin-top: 1%;
+  height: 95%;
+}
+
+.Cont_Bawah .tabel_stok {
+  margin-top: 0.5%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+/* filter & serch */
+.tabel_stok .div-filtercari {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+}
+
+/* inp-filter */
+.div-filtercari .filter {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  padding-left: 0.5vw;
+  background-color: #ffffff;
+}
+
+.div-filtercari .filter .in-filter {
+  width: 40%;
+  height: 4.5vh;
+  font-size: 16px;
+  border: 1px solid black;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-inline-start: 5px;
+  cursor: pointer;
+}
+
+.div-filtercari .filter .btn-filter {
+  width: 7.5%;
+  height: 4.5vh;
+  border: 1px solid black;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  font-size: 20px;
+  color: black;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* inp-cari */
+.div-filtercari .cari {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding-right: 0.5vw;
+  align-items: center;
+  justify-content: end;
+  background-color: #ffffff;
+}
+
+.div-filtercari .cari input {
+  width: 40%;
+  height: 4.5vh;
+  font-size: 16px;
+  border: 1px solid black;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-inline-start: 5px;
+}
+
+.div-filtercari .cari .btn-cari {
+  width: 7.5%;
+  height: 4.5vh;
+  border: 1px solid black;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  font-size: 20px;
+  color: black;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.div-filtercari .filter .btn-filter:active,
+.div-filtercari .cari .btn-cari:active {
+  background-color: #f3f3f3;
+}
+
+/* data terdaftar */
+.tabel_stok .tbl_data_barang-beranda {
+  display: flex;
+  flex-wrap: wrap;
+  height: 89%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.tabel_stok .tbl_data_barang-beranda ul {
+  height: 20vh;
+  min-width: 23%;
+  max-width: 23%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.tbl_data_barang-beranda .produk-terdaftar-data-beranda {
+  height: 20vh;
+  min-width: 23%;
+  max-width: 23%;
+  margin: 1%;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.produk-terdaftar-data-beranda .li-produk-beranda {
+  list-style: none;
+}
+
+.li-produk-beranda .div_terdaftar-beranda {
+  display: flex;
+  min-width: 100%;
+  max-width: 100%;
+  height: 20vh;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.div_terdaftar-beranda .gambar_terdaftar-data-beranda {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.div_terdaftar-beranda .gambar_terdaftar-data-beranda img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.div_terdaftar-beranda .keterangan_terdaftar-data-beranda {
+  width: 65%;
+  height: 100%;
+  font-size: 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.keterangan_terdaftar-data-beranda .div-top-data-beranda {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  border-top-right-radius: 15px;
+}
+
+.div-top-data-beranda .nama_terdaftar {
+  height: 100%;
+  width: 80%;
+  align-content: center;
+  padding-left: 3%;
+}
+
+.nama_terdaftar .produk {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-edit {
+  height: 50%;
+  width: 2.6vw;
+  border: none;
+  border-top-right-radius: 15px;
+  margin-right: 2px;
+}
+
+.btn-edit button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-top-right-radius: 15px;
+  color: #5e95fe;
+  background-color: #ffffff;
+}
+
+.btn-hapus {
+  height: 50%;
+  width: 2.6vw;
+  border: none;
+  margin-right: 2px;
+}
+
+.btn-hapus button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: red;
+  background-color: #ffffff;
+}
+
+.btn_terdaftar button:active {
+  color: #000000;
+}
+
+.keterangan_terdaftar-data-beranda .div-bottom {
+  width: 100%;
+  height: 50%;
+  border-bottom-right-radius: 15px;
+}
+
+.div-bottom .stok {
+  height: 45%;
+  width: 100%;
+  align-content: center;
+  font-weight: 600;
+}
+
+.div-bottom .kurangtambah {
+  display: flex;
+  width: 50%;
+  height: 20px;
+  background-color: red;
+}
+
+/* responsive */
+@media only screen and (min-width: 1187.5px) and (max-width: 1425px) {
+  .Cont_Beranda {
+    margin: 7vh 0 0 103.5px;
+    width: calc(100% - 103.5px);
+  }
+  .div-filtercari .filter .btn-filter,
+  .div-filtercari .cari .btn-cari {
+    width: 8%;
+  }
+  .tabel_stok .tbl_data_barang-beranda ul {
+    height: 18vh;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1187.5px) {
+  .Cont_Beranda {
+    margin: 7vh 0 0 87px;
+    width: calc(100% - 87px);
+  }
+  .div-filtercari .filter .btn-filter,
+  .div-filtercari .cari .btn-cari {
+    width: 10%;
+  }
+  .tabel_stok .tbl_data_barang-beranda ul {
+    height: 18vh;
+    min-width: 31%;
+    max-width: 31%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .Cont_Beranda {
+    margin: 7vh 0 0 70px;
+    width: calc(100% - 70px);
+  }
+  .Cont_Beranda .Cont_Atas {
+    height: 53.2%;
+    display: flexbox;
+  }
+  .Cont_Beranda .Cont_Atas .tabel {
+    display: block;
+  }
+  .respon_beranda_menu1 {
+    width: 100%;
+  }
+  .respon_beranda_menu2 {
+    margin-top: 4%;
+    width: 100%;
+  }
+  .Cont_Beranda .Cont_Atas .tbl_pemasukan,
+  .Cont_Beranda .Cont_Atas .tbl_pengeluaran,
+  .Cont_Beranda .Cont_Atas .tbl_saldo,
+  .Cont_Beranda .Cont_Atas .tbl_stok_barang {
+    width: 47.5%;
+  }
+  .div-filtercari .filter .btn-filter,
+  .div-filtercari .cari .btn-cari {
+    width: 12%;
+  }
+  .tabel_stok .tbl_data_barang-beranda {
+    height: 85%;
+  }
+  .tabel_stok .tbl_data_barang-beranda ul {
+    height: 16vh;
+    min-width: 31%;
+    max-width: 31%;
+  }
+  .Cont_Beranda .Cont_Bawah {
+    height: 70%;
+  }
+}
